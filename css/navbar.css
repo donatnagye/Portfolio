@@ -1,0 +1,262 @@
+@charset "utf-8";
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+li {
+    list-style: none;
+    
+}
+
+a{
+    color: white;
+    padding: 3px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    border-radius: 4px;
+    
+}
+.item a:hover {
+    color: #00FFF5;
+box-shadow: 2px 2px 2px #00ADB5;
+}
+::selection{
+    color:rgb(23, 20, 20);
+    background-color: rgb(145, 145, 145);
+}
+.toggle {
+    min-height: 70px;
+    display: inline-flex;
+    margin-top: 10px;
+    width: 95%;
+    font-size: 110%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+.title {
+    color: white;
+    font-size: 180%;
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    display: flex;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.item {
+    transition: 0.5s ease;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.hamburger:hover{
+    cursor:pointer;
+}
+@media(max-width:2000px) {
+    .hamburger {
+        display: block;
+        border-color: whites;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu {
+        position: fixed;
+        left: -100%;
+        top: 120px;
+        gap: 20px;
+        flex-direction: column;
+        width: 100px;
+        margin-left: 0.5em;
+        text-align: center;
+        transition: all 0.6s ease-in-out;
+    }
+    .toggle{
+        font-size: 100%;
+    }
+    .menu.active {
+        left: 0;
+        padding-top: 15px;
+    }
+}
+
+@media(max-width:900px) {
+    .hamburger {
+        display: block;
+        border-color: whites;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .menu {
+        position: fixed;
+        left: -100%;
+        top: 120px;
+        gap: 10px;
+        flex-direction: column;
+        margin-left: 0.5em;
+        width: 80px;
+        text-align: center;
+        transition: all 0.6s ease-in-out;
+    }
+.title {
+    color: white;
+    font-size: 150%;
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    display: flex;
+}
+    .menu.active {
+        left: 0;
+        padding-top: 15px;
+    }
+}
+
+.break {
+    width: 100%;
+    padding: 0;
+}
+@media(max-width:450px) {
+    .hamburger {
+        display: block;
+        border-color: whites;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu {
+        position: fixed;
+        left: -100%;
+        top: 120px;
+        gap: 10px;
+        flex-direction: column;
+        width: 50px;
+        margin:1.2em;
+        text-align: center;
+        transition: all 0.6s ease-in-out;
+    }
+.title {
+    color: white;
+    font-size: 120%;
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    display: flex;
+}
+    .menu.active {
+        left: 0;
+        padding-top: 15px;
+    }
+}
+.break {
+    width: 100%;
+    padding: 0;
+}
+
+
+
+hr {
+    margin: 1px 0px;
+    width: 100%;
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #393E46;
+}
+#footer ul{
+    margin: 15px;
+    padding: 5px;
+}
+#footer ul li{
+    display: inline-block;
+    justify-content: space-evenly;
+    margin-right: 5%;
+    padding: 2px;
+    position: relative;
+    margin-top: 4px;
+    align-items: center;
+}
+#footer nav{
+    text-align: center;
+    margin-bottom: 2px;
+}
+#footer span{
+    font-size: fixed;
+    font-size: 170%;
+    padding: 3px;
+    border-radius: 6px;
+    transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-out;
+}
+#twitter span:hover {
+    color: #1DA1F2;
+    box-shadow: 2.5px 2.5px 2.5px #1DA1F2;
+    background-color: wheat;
+}
+#facebook span:hover {
+    color: #4267B2;
+    box-shadow: 2.5px 2.5px 2.5px #4267B2;
+    background-color: wheat;
+}
+#linkedin span:hover {
+    color: #0072b1;
+    box-shadow: 2.5px 2.5px 2.5px #0072b1;
+    background-color: wheat;
+}
+#instagram span:hover {
+    color: #E1306C;
+    box-shadow: 2.5px 2.5px 2.5px #E1306C;
+    background-color: wheat;
+}
+#github span:hover {
+    color: black;
+    box-shadow: 2.5px 2.5px 2.5px black;
+    background-color: wheat;
+}
+.bottom{
+     width:50% !important;
+}
