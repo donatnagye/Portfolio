@@ -48,12 +48,13 @@ button:hover{
 }
 @media(max-width:450px) {
     .content p{
-        margin-left: 0em;
+        margin: 2em;
         font-size: 2em !important;
     }
     h1{
-        margin-left: 0em;
-        font-size: 2em !important;
+        margin:2em;
+        font-size: 1.75em !important;
+        /* margin-right: 1.7em!important; */
     }
     .content {
         max-height: 10em !important;
@@ -61,10 +62,10 @@ button:hover{
     .contact div {
         margin: 1.5em;
         margin-top: 7.5em;
-        margin-left: 5em;
+        margin-left: 3.5em;
     }
     .contact{
-        margin-top: 15em;
+        margin-top: 10em;
     }
     button {
         padding: 7px;
