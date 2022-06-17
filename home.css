@@ -37,7 +37,7 @@ background-color: #222831;
 }
 h1 {
     margin: 0.9em;
-    margin-left: 1em;
+    margin-left: 3em;
     margin-right: 0;
 }
 .content div {
@@ -78,8 +78,8 @@ li a:hover {
 }
 @media(max-width:1100px) {
     .content div {
-        font-size: 140%;
-        text-align: left;
+        margin: 2em;
+        font-size: 1.75em;
     }
 
     #arrow {
@@ -90,6 +90,12 @@ li a:hover {
 }
 
 @media(max-width:900px) {
+    h1 {
+            margin: 0.9em;
+            margin-left: 3em;
+            font-size: 1.75em;
+            margin-right: 0;
+        }
     .content div {
         font-size: 130%;
         text-align: left;
